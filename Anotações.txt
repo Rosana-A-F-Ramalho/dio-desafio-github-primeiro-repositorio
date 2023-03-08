@@ -1,0 +1,55 @@
+Anotações do Curso Git e Github da DIO Bootcamp Banco Pan
+
+Para Instalar o Git
+git-scm.com/download
+
+Config inicial do git
+-Identificação do Commint
+
+*Abrir o Git Bash
+
+Digitar : git config --global user.email "seuemail@gmail.com"
+Apertar : Enter
+Digitar : git config --global user.name "Seu nome"
+Apertar : Enter
+
+*Comandos basico
+
+mkdir: Criar uma nova pasta
+cd: Entrar em uma pasta
+ls: Mostra todos as pastas que tem no repositório
+del/rmdir: Deleta arquivos e pastas
+
+
+*Ciclo de vida dos status dos arquivos
+
+untracked: arquivo acabou de ser adicionado, mas o git ainda não conhece dentro do repositório 
+unmodified: existe no git, mas não tem modificação
+modifica o arquivo
+modified: arquivo modificado
+staged: fica com os arquivos modificados para poder commitar
+
+git init: inicia um repositório vazio
+git status: mostra o status do repositório
+git add: tira do modified e coloca no staged
+git add . ou gite add - a: tira todos os arquivos do modified e coloca no staged
+git commit -m "mensagem": criar um commit
+git push origin main = envia os commits para nuvem
+
+
+*Criando uma chave SSH
+
+Gerando uma nova chave SSH
+Abra o terminal
+Cole o texto abaixo, substituindo o seu email do Github.
+ssh-keygen -t ed25519 -c e-mail
+
+Isso cria uma nova chave SSH.
+
+Copie a chave 
+
+Agora na sua página do GitHub vá até o menu Settings.
+Clique em “SSH and GPG keys” na lateral esquerda.
+Ou acesse diretamente este link: https://github.com/settings/keys
+Clique no botão “New SSH Key”, preencha o título.
+E cole o SSH que está na sua área de transferência na caixa de texto “Key”, se precisar coloque sua senha novamente.
